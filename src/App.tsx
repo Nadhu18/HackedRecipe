@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import clockImg from './Assets/Icons/Icon feather-clock.png';
 import './App.css';
 import RecipeDetails from './RecipeDetails';
 
