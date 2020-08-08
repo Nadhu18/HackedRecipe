@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Metropolis-Black';
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +11,373 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: 'Metropolis-Black';
+  src: local('Metropolis-Black'), url(./Assets/Fonts/Metropolis/Metropolis-Black.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'Metropolis-BlackItalic';
+  src: local('Metropolis-BlackItalic'), url(./Assets/Fonts/Metropolis/Metropolis-BlackItalic.otf) format('otf');
+}
+@font-face {
+  font-family: 'Metropolis-Bold';
+  src: local('Metropolis-Bold'), url(./Assets/Fonts/Metropolis/Metropolis-Bold.otf) format('otf');
+}
+@font-face {
+  font-family: 'Metropolis-BoldItalic';
+  src: local('Metropolis-BoldItalic'), url(./Assets/Fonts/Metropolis/Metropolis-BoldItalic.otf) format('otf');
+}
+@font-face {
+  font-family: 'Metropolis-ExtraBold';
+  src: local('Metropolis-ExtraBold'), url(./Assets/Fonts/Metropolis/Metropolis-ExtraBold.otf) format('otf');
+}
+@font-face {
+  font-family: 'Metropolis-ExtraBoldItalic';
+  src: local('Metropolis-ExtraBoldItalic'), url(./Assets/Fonts/Metropolis/Metropolis-ExtraBoldItalic.otf) format('otf');
+}
+@font-face {
+  font-family: 'Metropolis-ExtraLight';
+  src: local('Metropolis-ExtraLight'), url(./Assets/Fonts/Metropolis/Metropolis-ExtraLight.otf) format('otf');
+}
+@font-face {
+  font-family: 'Metropolis-ExtraLightItalic';
+  src: local('Metropolis-ExtraLightItalic'), url(./Assets/Fonts/Metropolis/Metropolis-ExtraLightItalic.otf) format('otf');
+}
+@font-face {
+  font-family: 'Metropolis-Light';
+  src: local('Metropolis-Light'), url(./Assets/Fonts/Metropolis/Metropolis-Light.otf) format('otf');
+}
+@font-face {
+  font-family: 'Metropolis-LightItalic';
+  src: local('Metropolis-LightItalic'), url(./Assets/Fonts/Metropolis/Metropolis-LightItalic.otf) format('otf');
+}
+@font-face {
+  font-family: 'Metropolis-Medium';
+  src: local('Metropolis-Medium'), url(./Assets/Fonts/Metropolis/Metropolis-Medium.otf) format('otf');
+}
+@font-face {
+  font-family: 'Metropolis-MediumItalic';
+  src: local('Metropolis-MediumItalic'), url(./Assets/Fonts/Metropolis/Metropolis-MediumItalic.otf) format('otf');
+}
+@font-face {
+  font-family: 'Metropolis-Regular';
+  src: local('Metropolis-Regular'), url(./Assets/Fonts/Metropolis/Metropolis-Regular.otf) format('otf');
+}
+@font-face {
+  font-family: 'Metropolis-RegularItalic';
+  src: local('Metropolis-RegularItalic'), url(./Assets/Fonts/Metropolis/Metropolis-RegularItalic.otf) format('otf');
+}
+@font-face {
+  font-family: 'Metropolis-SemiBold';
+  src: local('Metropolis-SemiBold'), url(./Assets/Fonts/Metropolis/Metropolis-SemiBold.otf) format('otf');
+}
+@font-face {
+  font-family: 'Metropolis-SemiBoldItalic';
+  src: local('Metropolis-SemiBoldItalic'), url(./Assets/Fonts/Metropolis/Metropolis-SemiBoldItalic.otf) format('otf');
+}
+@font-face {
+  font-family: 'Metropolis-Thin';
+  src: local('Metropolis-Thin'), url(./Assets/Fonts/Metropolis/Metropolis-Thin.otf) format('otf');
+}
+@font-face {
+  font-family: 'Metropolis-ThinItalic';
+  src: local('Metropolis-ThinItalic'), url(./Assets/Fonts/Metropolis/Metropolis-ThinItalic.otf) format('otf');
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  background-image: url(./Assets/Images/Illustration2.png);
+  background-color: grey;
+}
+
+i {
+  padding-right: 5px;
+}
+
+.cards {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding: 1.5%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  background: #fefff9;
+  width: 300px;
+  color: #363636;
+  text-decoration: none;
+  -moz-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+@media (max-width: 700px) {
+  .card {
+    width: 100%;
+  }
+
+  .search{
+    position: relative;
+    top: 10px;
+    left: 10%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    width: 220px;
+    padding: 0px 10px;
+  }
+  
+}
+@media (min-width: 700px) {
+  .card {
+    max-width: 320px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .card:nth-child(even) {
+    margin-right: 0;
+  }
+  .search{
+    position: relative;
+    top: 20px;
+    left: 40%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    width: 220px;
+    padding: 0px 10px;
+  }
+}
+@media (min-width: 980px) {
+  .card:nth-child(even) {
+    margin-right: 20px;
+  }
+  .card:nth-child(3n) {
+    margin-right: 0;
+  }
+  .search{
+    position: relative;
+    top: 20px;
+    left: 40%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    width: 220px;
+    padding: 0px 10px;
+  }
+}
+.card span {
+  display: block;
+}
+.card .card-summary {
+  padding: 5% 5% 3% 5%;
+}
+.card .card-header {
+  position: relative;
+  height: 175px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  background-blend-mode: overlay;
+  -moz-border-radius: 15px 15px 0px 0px;
+  -webkit-border-radius: 15px 15px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
+}
+.card .card-header .card-category {
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  top: 0px;
+  right: 0px;
+  border-bottom-left-radius: 5px;
+}
+.card .icon-heart {
+  background-position: 0 -58px;
+  width: 21px;
+  height: 26px;
+}
+.card .card-summary ul {
+  list-style: none;
+  margin: 0.5em 0 0;
+  padding: 0;
+}
+.card .card-summary ul li {
+  display: inline-block;
+  margin-left: 1em;
+  line-height: 1em;
+}
+.card .card-header:hover, .card .card-header:focus {
+  background-color: rgba(255, 255, 255, 0);
+}
+.card .card-title {
+  background: rgba(157, 187, 63, 0.85);
+  padding: 3.5% 0 2.5% 0;
+  color: white;
+  font-family: 'Metropolis-Regular';
+  /* text-transform: uppercase; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.card .card-title h3 {
+  font-size: 1.2em;
+  line-height: 1.2;
+  padding: 0 3.5%;
+  margin: 0;
+}
+.card .card-meta {
+  display: flex;
+  width: calc(100% - 35px);
+  justify-content: center;
+  align-items: center;
+  max-height: 0;
+  overflow: hidden;
+  color: #666;
+  font-size: .78em;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 5%;
+  padding: 0 5%;
+  -moz-transition-property: max-height;
+  -o-transition-property: max-height;
+  -webkit-transition-property: max-height;
+  transition-property: max-height;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.card:hover, .card:focus {
+  background: white;
+  -moz-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+}
+.card:hover .card-title, .card:focus .card-title {
+  background: rgba(157, 187, 63, 0.95);
+}
+.card:hover .card-meta, .card:focus .card-meta {
+  display: flex;
+  width: calc(100% - 35px);
+  justify-content: center;
+  align-items: center;
+  max-height: 50px;
+}
+
+.btn{
+  background-color: #9dbb3ff2;
+  width: 100px;
+  height: 30px;
+
+}
+
+.recipe-details{
+  display: flex;
+}
+
+.search-bar{
+  
+  border: 0px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.search-icon{
+  padding: 5px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+img {
+  min-width: 100%;
+}
+/* 
+body {
+  background: #f0f0f0;
+  font-size: 17px;
+  line-height: 1.4;
+  font-family: 'Jaldi', sans-serif;
+} */
+
+* {
+  -moz-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -moz-transform;
+  -o-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -o-transform;
+  -webkit-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -webkit-transform;
+  transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, transform;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+
+  background-image: url("./Assets/Images/Illustration1.png");
+  background-color: #eae9e9;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
