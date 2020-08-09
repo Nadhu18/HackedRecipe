@@ -16,7 +16,7 @@ type Props = {
 const RecipeDetails = ({ selectedRecipe }: Props) => {
 
     return (
-        <div className="recipe-details" >
+        <div className="recipe-details">
             <div className="card" key={selectedRecipe.id}>
                 <span className="card-header">
                     <div className="card-category">

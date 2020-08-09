@@ -132,16 +132,22 @@ i {
     width: 100%;
   }
 
-  .search{
-    position: relative;
-    top: 10px;
-    left: 10%;
-    background-color: white;
-    border-radius: 5px;
+  .recipe-details{
     display: flex;
-    width: 220px;
-    padding: 0px 10px;
+    flex-direction: column;
   }
+  /* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 750px;
+  overflow: auto;
+  background-image: url("./Assets/Images/Illustration1.png");
+  background-color: #eae9e9;
+}
   
 }
 @media (min-width: 700px) {
@@ -153,34 +159,52 @@ i {
   .card:nth-child(even) {
     margin-right: 0;
   }
-  .search{
-    position: relative;
-    top: 20px;
-    left: 40%;
-    background-color: white;
-    border-radius: 5px;
+  .recipe-details{
     display: flex;
-    width: 220px;
-    padding: 0px 10px;
   }
+  /* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+
+  background-image: url("./Assets/Images/Illustration1.png");
+  background-color: #eae9e9;
+}
 }
 @media (min-width: 980px) {
   .card:nth-child(even) {
     margin-right: 20px;
   }
-  .card:nth-child(3n) {
+  /* .card:nth-child(3n) {
     margin-right: 0;
-  }
-  .search{
-    position: relative;
-    top: 20px;
-    left: 40%;
-    background-color: white;
-    border-radius: 5px;
+  } */
+  .recipe-details{
     display: flex;
-    width: 220px;
-    padding: 0px 10px;
   }
+  /* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  background-image: url("./Assets/Images/Illustration1.png");
+  background-color: #eae9e9;
+}
+}
+.search{
+  position: relative;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  width: 220px;
+  padding: 0px 10px;
 }
 .card span {
   display: block;
@@ -291,11 +315,9 @@ i {
   background-color: #9dbb3ff2;
   width: 100px;
   height: 30px;
-
-}
-
-.recipe-details{
-  display: flex;
+  border-radius: 8px;
+  box-shadow: #aaaaaa;
+  cursor: pointer;
 }
 
 .search-bar{
@@ -355,17 +377,7 @@ body {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
 
-  background-image: url("./Assets/Images/Illustration1.png");
-  background-color: #eae9e9;
-}
 
 /* The Close Button */
 .close {
